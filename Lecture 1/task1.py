@@ -169,7 +169,7 @@ print_square(3)
 
 i = 1
 while i != 10:
-    print('{} {} {} {} {} {} {} {} {}'.format(*[i * number for number in range(1, 10)]))
+    print(*[i * number for number in range(1, 10)], sep='\t')
     i += 1
 
 # 4) переробити це завдання під меню
