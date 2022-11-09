@@ -7,26 +7,26 @@ def menu():
 
     number_list = [22, 3, 5, 2, 8, 2, -23, 8, 23, 5]
 
-    chose = int(input('сделайте свой выбор '))
-    if chose == 1:
+    chose = input('сделайте свой выбор ')
+    if chose == "1":
         print(number_list)
         print(min(number_list))
-    elif chose == 2:
+    elif chose == "2":
         print(number_list)
         print(list(set(number_list)))
-    elif chose == 3:
+    elif chose == "3":
         count = 3
-        new = number_list[:]
+        new = number_list.copy()
         while (count < len(new)):
             print(new)
             new[count] = 'X'
             count += 4
             print(number_list)
             print(new)
-    elif chose == 4:
+    elif chose == "4":
         print(number_list)
         print(sum(number_list) / len(number_list))
-    elif chose == 6:
+    elif chose == "6":
         return
     else:
         print('wrong!')
@@ -34,3 +34,4 @@ def menu():
 
 
 menu()
+
