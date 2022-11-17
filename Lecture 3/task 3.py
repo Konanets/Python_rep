@@ -137,22 +137,21 @@ class Magazine(Printable):
 class Main:
     __printable_list = []
 
-    @staticmethod
-    def add(other):
-        if isinstance(other, Magazine):
-            Main.__printable_list.append(other)
-        elif isinstance(other, Book):
-            Main.__printable_list.append(other)
+    def add(self):
+        if isinstance(self, Magazine):
+            Main.__printable_list.append(self)
+        elif isinstance(self, Book):
+            Main.__printable_list.append(self)
 
-    @staticmethod
-    def show_all_magazines():
-        for item in Main.__printable_list:
+    @classmethod
+    def show_all_magazines(cls):
+        for item in cls.__printable_list:
             if isinstance(item, Magazine):
                 item.print()
 
-    @staticmethod
-    def show_all_books():
-        for item in Main.__printable_list:
+    @classmethod
+    def show_all_books(cls):
+        for item in cls.__printable_list:
             if isinstance(item, Book):
                 item.print()
 
