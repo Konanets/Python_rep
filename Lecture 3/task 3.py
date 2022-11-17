@@ -157,15 +157,15 @@ class Main:
                 item.print()
 
 
-main = Main()
+Main.add(Magazine('New York Time'))
+Main.add(Magazine('Pravda Ua'))
+Main.add(Magazine('Polonia'))
+Main.add(Magazine('France 24'))
 
-main.add(Magazine('New York Time'))
-main.add(Magazine('Pravda Ua'))
-main.add(Magazine('Polonia'))
-main.add(Magazine('France 24'))
+Main.add(Book('Discipline is freedom'))
+Main.add(Book('war and peace'))
+Main.add(Book('New World Order'))
 
-main.add(Book('Discipline is freedom'))
-
-
-
-main.show_all_magazines()
+Main.show_all_magazines()
+print('-' * 40)
+Main.show_all_books()
