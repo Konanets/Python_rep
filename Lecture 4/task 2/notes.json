@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "price": 35,
+    "name": "biba"
+  },
+  {
+    "id": 2,
+    "price": 4,
+    "name": "dima 25"
+  },
+  {
+    "id": 3,
+    "price": 123,
+    "name": "biba"
+  },
+  {
+    "id": 4,
+    "price": 143,
+    "name": "biba"
+  }
+]
